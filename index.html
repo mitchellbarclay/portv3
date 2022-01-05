@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<link rel="stylesheet" href="style.css">
+	<script src="myscripts.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="index-body">
+
+
+
+	<div id="outerContainer">
+		<div id="container">
+
+<div class="topbar">
+	<div class="topbar-text">
+	<img src="images/icons/mb_logo.png">
+  </div>
+	<div class=topbar-icons>
+		<img src="images/icons/wifi.png">
+		<img src="images/icons/battery.png">
+		<p><span id="datetime"></span></p>
+
+		<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+		</script>
+	</div>
+</div>
+
+
+
+			<div class="icons">
+				<div class="icon" id="icon1">
+					<a href="graphic.html" target="search_iframe" onclick="openWindow()"><img src="images/icons/logos_icon.png"></a>
+					<p>Logos</p>
+				</div>
+
+
+
+
+
+				<div class="icon" id="icon2" onclick="openWindow2()">
+					<img src="images/icons/character_icon.png">
+					<p>Character<br>Creator</p>
+
+				</div>
+
+				<div class="icon" id="icon3" onclick="openWindow3()">
+
+					<img src="images/icons/web_icon.png">
+					<p>Web design</p>
+
+				</div>
+
+				<div class="icon" id="icon4" onclick="openWindow4()">
+
+					<img src="images/icons/video_icon.png">
+					<p>Videos</p>
+
+				</div>
+
+
+				<div class="icon" id="icon6">
+
+					<a href="art.html" target="search_iframe" onclick="openWindow()"><img src="images/icons/art_icon.png"></a>
+					<p>Art & Illustration</p>
+
+				</div>
+				<div class="icon" id="icon7">
+
+					<a href="social.html" target="search_iframe" onclick="openWindow()"><img src="images/icons/social_icon.png"></a>
+					<p>Social Media & Advertising</p>
+
+				</div>
+			</div>
+
+
+
+			<div id="about-me-container">
+				<div class="about-me-inner">
+					<div>
+						<p>Hi, I’m Mitchell, but you can call me Mitchell (either works). I'm a digital designer based in Wellington, New Zealand. <br><br>
+
+							I'm currently the Digital Media Manager for education company StudyTime. They've put me in charge of creating video content, web design/ maintenance, and designing resources and advertisement graphics. I also worked in the freelance space while studying at Victoria University, where I graduated early 2020 with a double degree in Media Design (BDI) and Information System (BCOM).<br><br>
+
+							What makes me standout as designer, is that I actually don’t specialise in anything. I specialise in <b>everything</b>. <br><br>
+						</p></div>
+						<div class="close-about"></div>
+					</div>
+				</div>
+
+
+
+				<div id="dock">
+					<div class="about-button-container">
+						<div class="about-button"onclick="slide()">
+							<img src="images/icons/about_icon.png">
+							<h3> About Me </h3>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div id="item1" class="item window">
+
+					<div class="close" onclick="closer()">
+						<a href="load.html" target="search_iframe">×</a>
+					</div>
+
+					<div class="item-window">
+
+						<div class="window-inner" id="window-inner1">
+							<div class="webframe-container" >
+								<div class="webframe-inner-container">
+									<iframe src="graphic.html" class="window-iframe" title="description" name="search_iframe"></iframe>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="window-inner" id="window-inner2">
+							<div class="character-container" >
+								<div class="character-inner-container">
+									<iframe src="ps2/arrangement.html" class="window-iframe" title="description"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<div class="window-inner" id="window-inner3">
+
+
+							<div class="tabs-container">
+								<div class="tab">
+									<a class="tab1 active-tab" href="st_home.html" target="web_iframe" onclick="active1()">StudyTime</a>
+									<a class="tab2" href="store.html" target="web_iframe" onclick="active2()">Store</a>
+									<a class="tab3" href="academy.html" target="web_iframe" onclick="active3()">Academy</a>
+								</div>
+							</div>
+							<div class="webframe-container">
+								<div class="webframe-inner-container">
+									<iframe src="st_home.html" class="window-iframe" title="description" name="web_iframe"></iframe>
+								</div>
+							</div>
+						</div>
+
+
+						<style>
+
+						.video-list{
+							padding-top:30px;
+							width:100%;
+						}
+
+						.video-list ul{
+							list-style:none;
+							width:100%;
+							padding:0px;
+							margin:0px;
+						}
+
+						.video-list li{
+              background:#181f21;
+							padding:0px;
+							margin-top:10px;
+							margin-bottom:10px;
+							padding:20px;
+							cursor:pointer;
+							border-radius:20px;
+						}
+
+
+
+							.video-list li:hover{
+								background:black;
+								transition:0.2s;
+							}
+
+
+
+						.video-list p{
+							margin:0px!important;
+							padding:0px!important;
+							line-height:1em;
+							text-align:left;
+							color:white;
+
+						}
+
+						.video-list h3{
+							margin:0px!important;
+							padding:0px!important;
+							line-height:1em;
+							text-align:left;
+							color:white;
+
+						}
+
+						#vid1{
+							max-height:0px;
+							overflow:hidden;
+							padding:0px;
+							transition:0.5s;
+						}
+
+						#window-inner4{
+							background:#363c3d;
+						}
+
+						</style>
+
+						<div class="window-inner" id="window-inner4">
+							<!-- <div class = "video-link" onclick="toggleVideo()">
+								<a href="https://player.vimeo.com/video/615661140?h=997720fc0b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" target="video-iframe"> Pink Smoke </a>
+								<a href="https://wikipedia.org" target="video-iframe"> Wikipedia </a>
+							</div> -->
+							<div class= "video-list">
+								<ul>
+									<li onclick="showVideo();"><h3>Animation Reel</h3> <br> <p> This is a video is cool video v cool and sentence.</li>
+									<li id = "vid1">	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662103561?h=2a0d672fdf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mitchell Barclay - Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+									</script>
+									</li>
+									<li><h3>IT Desk</h3><br> <p> Another video v cool v neat I like it. </p>
+
+
+								</ul>
+						</div>
+
+					</div>
+
+
+
+				</div>
+
+
+				<div id="video-player">
+					<div class="video-closer" >
+						<a href="load.html" target="video-iframe" onclick="toggleVideo()">×</a>
+					</div>
+
+					<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="load.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pink Smoke" name="video-iframe"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+		<!--      sidebar code for later -->
+
+		<!--       <div class="sidebar-container">
+		<div class="sidebar-inner-container">
+		<div class="sidebar">
+		<a class = "sbl1 active" href="graphic.html" target="search_iframe" onclick="active1()">Graphic</a>
+		<a class = "sbl2" href="http://en.wikipedia.org" target="search_iframe" onclick="active2()">Wikipedia</a>
+		<a class = "sbl3" href="http://en.wikipedia.org" target="search_iframe" onclick="active3()">Wikipedia</a>
+	</div>
+
+</div>
+</div>   -->
+
+
+
+<script src="myscripts.js"></script>
+</body>
+
+</html>
