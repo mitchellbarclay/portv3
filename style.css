@@ -33,7 +33,6 @@ display:none;
 	left:40px;
   transition:0.7s;
   opacity:0;
-
 }
 
 .about-me-inner{
@@ -88,8 +87,6 @@ ul{
   margin-left:20px;
   display:flex;
   margin-bottom:20px;
-
-
 }
 
 .about-button h3{
@@ -108,7 +105,6 @@ ul{
 
 .about-button-container{
   height:100%;
-
 }
 
 .about-button img{
@@ -125,15 +121,16 @@ ul{
 }
 
 .topbar-text{
+
 }
 
 .topbar{
-  width:100%;
+  width:100vw;
   background:rgba(61, 61, 61, 0.8);
   height:37px;
   position:absolute;
   top:0;
-  padding-left:40px;
+  padding-left:0px;
   display:flex;
 
  }
@@ -141,12 +138,14 @@ ul{
  .topbar-text img{
    height:25px;
    margin-top:7px;
+   margin-left:20px;
+
 
  }
 
  .topbar-icons{
  position:absolute;
-right:40px;
+right:20px;
  display:flex;
  }
 
@@ -235,6 +234,7 @@ right:40px;
     border-right:0.5px solid #999999;
     border-radius:10px 10px 0px 0px;
 }
+
 .tab a:nth-child(3){
   border-right:none;
 }
@@ -495,9 +495,6 @@ right:0;
   margin-bottom:2%;
 
 }
-.icon img{
-    -webkit-filter: drop-shadow(1px 1px 0px #404040);
-}
 
 .icon p{
   color:white;
@@ -526,6 +523,7 @@ right:0;
     height:auto;
     transition:0.2s;
     transition-timing-function: ease-in;
+    -webkit-filter: drop-shadow(1px 1px 0px #404040);
   }
 
 .icons{
@@ -550,7 +548,7 @@ right:0;
 
 #video-window{
   position:fixed
-  background:black;
+  background-color:black;
   width:100vw;
   z-index:9999999;
   padding:0px;
@@ -615,11 +613,46 @@ height:10%;
 
 
 
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 767px) {
 
 #about-me-container{
   width:90%;
   left:5%;
+}
+
+
+.about-me-inner p{
+  text-align:justify;
+  padding:0px 15px 0px 15px;
+  font-weight:200;
+  font-size:14px;
+}
+
+.about-button{
+
+}
+
+.about-button h3{
+  color:white;
+  text-shadow:1px 1px black;
+  margin-top:auto;
+  margin-bottom:auto;
+  font-size:20px;
+}
+
+
+.about-button:hover{
+  transform:translateX(0px);
+  transition:0.2s;
+
+}
+
+.about-button img{
+  width:13vw;
+  padding-left:4vw;
+  padding-right:4vw;
+  padding-top:2vw;
+  padding-bottom:2vw;
 }
 
 .item-window{
@@ -671,6 +704,36 @@ display:none;
 resize:none;
 }
 
+
+.icon img{
+  width:23vw;
+  height:auto;
+  transition:0.2s;
+  transition-timing-function: ease-in;
+  -webkit-filter: drop-shadow(1px 1px 0px #404040);
+}
+
+.icon{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+#index-body {
+  margin: 0px!important;
+  height: 100%!important;
+  overflow: hidden!important;
+  width:100vw!important;
+
+}
+
+.icon p {
+  width:23vw;
+  font-size:12px;
+}
+
+.icons {
+  top:50px;
+}
 
  }
 
