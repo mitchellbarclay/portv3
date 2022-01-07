@@ -11,7 +11,10 @@
 
 	<style>
 
-
+.refresh{
+	font-size:1.5em;
+	line-height:1.5em!important;
+}
 </style>
 
 
@@ -23,17 +26,22 @@
 
 <div class="menu-bar" style="position:fixed;">
 <div class="search-bar">
-<p>	ᐸ </p> <p>ᐳ</p> <p>⟳</p>
+<p>	ᐸ </p> <p>ᐳ</p>
 <div class="url-bar">
 	<p>studytime.co.nz</p>
 </div>
-<div id="website-info" onclick="webInfo()">
 
 </div>
+<div id="website-info" class="info-closed" onclick="webInfo()">
+
+	<div class = "web-info-inner">
+		<p>penis</p>
+	</div>
+
 </div>
-<img src="pdf/HomeHomeMenubar.png" style="height:auto;width:100vw;">
+<img src="images/web/homemenu.png" style="height:auto;width:100vw;">
 </div>
-<img src="pdf/HomeHome.png" class ="page-preview" style="height:auto;width:100vw;">
+<img src="images/web/home.png" class ="page-preview" style="height:auto;width:100vw;">
 
 	<script>
 
@@ -42,11 +50,18 @@
 		function webInfo(){
 
 
-  if (infoslide.style.right !== "0px") {
-    infoslide.style.right = "0px";
+  if (infoslide.style.width !== "60vw") {
+    infoslide.style.width = "60vw";
+		infoslide.classList.add('info-open')
+		infoslide.classList.remove('info-closed');
+
   } else {
-    infoslide.style.right = "-50vw";
+    infoslide.style.width = "0vw";
+		infoslide.classList.remove('info-open')
+		infoslide.classList.add('info-closed');
+
   }
+
 
 }
 

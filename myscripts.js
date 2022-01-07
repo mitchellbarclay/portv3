@@ -65,19 +65,18 @@ function openWindow(){
   inner3.style.display = "none";
   inner4.style.display = "none";
 
-
 }
 
 
-function openWindow2(){
-
-  itemOpen.style.display = "block";
-  inner2.style.display = "flex";
-  inner1.style.display = "none";
-  inner3.style.display = "none";
-  inner4.style.display = "none";
-
-}
+// function openWindow2(){
+//
+//   itemOpen.style.display = "block";
+//   inner2.style.display = "flex";
+//   inner1.style.display = "none";
+//   inner3.style.display = "none";
+//   inner4.style.display = "none";
+//
+// }
 
 
 function openWindow3(){
@@ -91,16 +90,16 @@ function openWindow3(){
 
 }
 
-function openWindow4(){
-
-  itemOpen.style.display = "block";
-  inner4.style.display = "flex";
-  inner1.style.display = "none";
-  inner2.style.display = "none";
-  inner3.style.display = "none";
-
-
-}
+// function openWindow4(){
+//
+//   itemOpen.style.display = "block";
+//   inner4.style.display = "flex";
+//   inner1.style.display = "none";
+//   inner2.style.display = "none";
+//   inner3.style.display = "none";
+//
+//
+// }
 
 
 function slide(){
@@ -110,7 +109,7 @@ function slide(){
     aboutMe.style.bottom = "150px";
     aboutMe.style.opacity = "1";
   } else {
-    aboutMe.style.bottom = "-800px";
+    aboutMe.style.bottom = "0";
     aboutMe.style.opacity = "0";
   }
 
@@ -135,16 +134,70 @@ function toggleVideo(){
 
 
 var vid1 = document.getElementById("vid1");
+var vid2 = document.getElementById("vid2");
+var vid3 = document.getElementById("vid3");
+var vid4 = document.getElementById("vid4");
+var vid5 = document.getElementById("vid5");
+var vid6 = document.getElementById("vid6");
+var vid7 = document.getElementById("vid7");
+var vid8 = document.getElementById("vid8");
 
-function showVideo(){
 
-
+function showVideo1(){
   if (vid1.style.maxHeight !== "100vh") {
     vid1.style.maxHeight = "100vh";
   } else {
     vid1.style.maxHeight = "0vh";
   }
-
+}
+function showVideo2(){
+  if (vid2.style.maxHeight !== "100vh") {
+    vid2.style.maxHeight = "100vh";
+  } else {
+    vid2.style.maxHeight = "0vh";
+  }
+}
+function showVideo3(){
+  if (vid3.style.maxHeight !== "100vh") {
+    vid3.style.maxHeight = "100vh";
+  } else {
+    vid3.style.maxHeight = "0vh";
+  }
+}
+function showVideo4(){
+  if (vid4.style.maxHeight !== "100vh") {
+    vid4.style.maxHeight = "100vh";
+  } else {
+    vid4.style.maxHeight = "0vh";
+  }
+}
+function showVideo5(){
+  if (vid5.style.maxHeight !== "100vh") {
+    vid5.style.maxHeight = "100vh";
+  } else {
+    vid5.style.maxHeight = "0vh";
+  }
+}
+function showVideo6(){
+  if (vid6.style.maxHeight !== "100vh") {
+    vid6.style.maxHeight = "100vh";
+  } else {
+    vid6.style.maxHeight = "0vh";
+  }
+}
+function showVideo7(){
+  if (vid7.style.maxHeight !== "100vh") {
+    vid7.style.maxHeight = "100vh";
+  } else {
+    vid7.style.maxHeight = "0vh";
+  }
+}
+function showVideo8(){
+  if (vid8.style.maxHeight !== "100vh") {
+    vid8.style.maxHeight = "100vh";
+  } else {
+    vid8.style.maxHeight = "0vh";
+  }
 }
 
 

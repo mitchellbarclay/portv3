@@ -8,61 +8,198 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="myscripts.js"></script>
 
-<style>
+	<style>
 
-.ig-grid{
-	padding-left:1vw;
-	padding-right:1vw;
+	.eapps-instagram-feed-posts-view{
+		margin-bottom:20px;
+	}
+
+	.ig-description p{
+		text-align:left!important;
+		border-radius:20px;
+		max-width:660px;
+		padding:10px 20px 10px 20px;
+		margin:auto;
+	}
+
+	.ig-description{
+		background:lightgrey;
+
+		margin:auto;
+		display:flex;
+		width:100%;
+	}
+
+	.ig-grid{
+		max-width:700px;
+		margin:auto;
+		width:100%;
+		margin-top:20px;
+	}
+
+	.eapps-instagram-feed-popup-item{
+		margin-top:10vh!important;
+		margin-bottom:50vh!important;
+	}
+
+	.es-post-media-carousel-arrow-next{
+    background:rgba(214, 214, 214, 0.7);
+		width:50px!important;
+		height:50px!important;
+		text-align:center;
+right:0px!important;
+
+	}
+
+	.es-post-media-carousel-arrow-prev{
+		background:rgba(214, 214, 214, 0.7);
+		width:50px!important;
+		height:50px!important;
+		text-align:center;
+left:0px!important;
+
+	}
+
+		.es-post-media-carousel-arrow-next::after{
+			margin-right:10px;
+			margin-top:3px;
+			background:#323538!important;
+		}
+		.es-post-media-carousel-arrow-next::before{
+			margin-right:10px;
+			margin-top:3px;
+			background:#323538!important;
+		}
+
+		.es-post-media-carousel-arrow-prev::after{
+			margin-left:10px;
+			margin-top:3px;
+			background:#323538!important;
+		}
+		.es-post-media-carousel-arrow-prev::before{
+			margin-left:10px;
+			margin-top:3px;
+			background:#323538!important;
+		}
+
+	.ig-grid-container{
+		max-width:700px;
+		margin:auto;
+	}
+.eapps-instagram-feed-popup-inner{
+  max-width:80vh!important;
+	margin-top:0px!important;
 }
 
-h4{
-	text-align:center;
+	h4{
+		text-align:center;
+		margin:auto;
+		margin-top:20px;
+	}
+
+	.ig-profile img{
+		width:60px;
+		background:black;
+		padding:20px 10px 20px 2px;
+		border-radius:50%;
+		border:none;
+	}
+
+	.img-container{
+
+		margin-right:auto;
+		margin-left:20px;
+		padding-right:3vw;
+
+	}
+
+	.ig-p-row{
+		margin:auto;
+		width:100vw;
+		display:flex;
+		margin-bottom:20px;
+		margin-top:80px;
+		max-width:700px;
+	}
+
+	.ig-profile{
+		padding-bottom:20px;
+	}
+
+	.meta-count{
+		line-height:1em;
+		text-align:center;
+		margin-left:auto;
+		display:flex;
+		right:0px;
+	}
+
+
+	.meta-count p{
+		margin-right:5vw;
+	}
+
+	.count-num{
+		font-size:20px;
+		font-weight:bold;
+	}
+
+
+.banner-container{
+	width:100%;
 	margin:auto;
-	margin-top:20px;
-}
-
-.ig-profile img{
-	width:60px;
-	background:black;
-	padding:20px 10px 20px 2px;
-	border-radius:50%;
-	border:none;
-}
-
-.img-container{
-
-	margin:auto;
-  padding-right:3vw;
-}
-
-.ig-p-row{
-	margin:auto;
-	width:100vw;
+	position:absolute;
 	display:flex;
+	margin-top: -40px;
+	z-index:99999;
 	margin-bottom:20px;
+
+}
+	.banner-img{
+		width:100%;
+		max-width:700px;
+		margin:auto;
+
+		}
+
+	.banner-img img{
+		width:100%;
+		margin-bottom:30px;
+	}
+
+	/* .watermark-cover{
+		width:100%;
+		background:white;
+		height:40px;
+		margin-top:-50px;
+		z-index:999999;
+		position:absolute;
+	} */
+
+
+	@media screen and (max-width: 767px) {
+
+.ig-grid-container{
+	width:95%;
 }
 
-.ig-profile{
-padding-left:3vw;
-padding-right:3vw;
-padding-bottom:20px;
+.ig-grid {
+	margin-top:0px;
+
+}
+.banner-img{
+	width:95%;
 }
 
-.meta-count{
-	line-height:1em;
-	text-align:center;
-	margin:auto;
-  display:flex;
+.banner-img img{
+	width:100%;
+	margin-bottom:10px;
 }
 
-
-.meta-count p{
- margin-right:5vw;
+.eapps-instagram-feed-posts-view{
+	margin-bottom:0px;
 }
 
-.count-num{
-	font-size:20px;
-	font-weight:bold;
 }
 </style>
 
@@ -70,32 +207,48 @@ padding-bottom:20px;
 
 <body class="iframe-body" style="background:white; margin:0px; padding:0px;">
 
-  <div class="ig-profile">
+	<div class="logo-header">
+		<img src="images/icons/openfolder.png"><h1>Social Media</h1>
+	</div>
+
+	<div class="ig-profile">
+
 		<div class = "ig-p-row">
+			<div class="img-container">
+				<img src="images/icons/mb_logo2.png">
+			</div>
+			<div class="meta-count">
+
+				<p><span class="count-num">x</span><br>Posts</p>
+				<p><span class="count-num">y</span><br>Likes</p>
+				<p><span class="count-num">z</span><br>Followers</p>
+
+			</div>
+		</div>
+		<div class = "ig-description">
+			<p> A collection of design works related to social media content and social media advertising. I think it's important when tasked with designing for a particular platform to make the most of the space and format applicable to that platform. For that reason I'm presenting these works through an Instagram grid to exemplify how I utilise this space. </p>
+		</div>
+
 
 	</div>
 
-	<div class = "ig-p-row">
-		<div class="img-container">
-		<img src="images/icons/mb_logo2.png">
-	</div>
-	<div class="meta-count">
 
-	<p><span class="count-num">205</span><br>Posts</p>
-	<p><span class="count-num">1,000</span><br>Likes</p>
-	<p><span class="count-num">5</span><br>Clients</p>
-
-</div>
-	</div>
-
-	</div>
-
+  <div class="ig-grid-container">
 	<div class="ig-grid"><script src="https://apps.elfsight.com/p/platform.js" defer></script>
-	<div class="elfsight-app-8a49c0c9-9e43-41af-9e1a-f5318a505596"></div></div>
-
-
-
+		<div class="elfsight-app-8a49c0c9-9e43-41af-9e1a-f5318a505596"></div></div>
 </div>
+
+<div class="watermark-cover">
+</div>
+
+<div class="banner-container">
+<div class="banner-img">
+	<img src="images/social/st_banner.png">
+	<img src="images/social/arrow_banner.png">
+</div>
+</div>
+
+	</div>
 
 
 </body>
