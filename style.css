@@ -914,4 +914,10 @@ resize:none;
       pointer-events: none;
 
     }
+
+    .page-preview{
+      margin-top:0px;
+    }
+
+
   }
