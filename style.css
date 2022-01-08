@@ -782,7 +782,7 @@ resize:none;
 
 
     .page-preview{
-      margin-top:2.5em;
+      /* margin-top:2.5em; */
     }
 
     .url-bar{
@@ -918,6 +918,8 @@ resize:none;
     .page-preview{
       margin-top:0px;
     }
+
+
 
 
   }

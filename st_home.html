@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -6,15 +6,74 @@
 
 	<link rel="stylesheet" href="style.css">
 	<script src="myscripts.js"></script>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
 	<style>
 
-.refresh{
-	font-size:1.5em;
-	line-height:1.5em!important;
+
+
+
+
+	.refresh{
+		font-size:1.5em;
+		line-height:1.5em!important;
+	}
+
+	.page-preview{
+		margin:0!important;
+		padding:0!important;
+		border:none;
+		display:block;
+
+	}
+
+	.page-preview img{
+
+	}
+
+	.stiched-website img{
+		display:block;
+		width:100vw;
+		height:auto;
+	}
+
+	.stiched-website{
+		position:absolute;
+	}
+
+	.web-menu{
+		position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 2.5em;
+margin-top:0px;
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.1);
+
+	}
+
+	.web-menu-top{
+margin-top:2.5em;
+
+
+	}
+	@media screen and (max-width: 767px) {
+		.web-menu-top{
+	margin-top:0px;
+
+		}
+
+		.web-menu{
+			top:0px;
+		}
+
+
+
+
 }
+
 </style>
 
 
@@ -24,46 +83,63 @@
 
 
 
-<div class="menu-bar" style="position:fixed;">
-<div class="search-bar">
-<p>	ᐸ </p> <p>ᐳ</p>
-<div class="url-bar">
-	<p>studytime.co.nz</p>
-</div>
-
-</div>
-<div id="website-info" class="info-closed" onclick="webInfo()">
-
-	<div class = "web-info-inner">
-		<p>penis</p>
+	<div class="stiched-website">
+		<img src="images/web_st/st_menu.jpeg" class="web-menu-top">
+		<img src="images/web_st/st_menu2.jpg" class="web-menu">
+		<img src="images/web_st/st_1.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_2.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_3.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_4.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_5.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_6.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_8.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_9.jpeg" class ="page-preview"  >
+		<img src="images/web_st/st_10.jpeg" class ="page-preview">
 	</div>
 
-</div>
-<img src="images/web/homemenu.png" style="height:auto;width:100vw;">
-</div>
-<img src="images/web/home.png" class ="page-preview" style="height:auto;width:100vw;">
+
+
+
+	<div class="menu-bar" style="position:fixed; width:100vw;">
+		<div class="search-bar">
+			<p>	ᐸ </p> <p>ᐳ</p>
+			<div class="url-bar">
+				<p>studytime.co.nz</p>
+			</div>
+
+		</div>
+		<div id="website-info" class="info-closed" onclick="webInfo()">
+
+			<div class = "web-info-inner">
+				<p>penis</p>
+			</div>
+
+		</div>
+	</div>
+
+
 
 	<script>
 
-		var infoslide = document.getElementById("website-info");
+	var infoslide = document.getElementById("website-info");
 
-		function webInfo(){
-
-
-  if (infoslide.style.width !== "60vw") {
-    infoslide.style.width = "60vw";
-		infoslide.classList.add('info-open')
-		infoslide.classList.remove('info-closed');
-
-  } else {
-    infoslide.style.width = "0vw";
-		infoslide.classList.remove('info-open')
-		infoslide.classList.add('info-closed');
-
-  }
+	function webInfo(){
 
 
-}
+		if (infoslide.style.width !== "60vw") {
+			infoslide.style.width = "60vw";
+			infoslide.classList.add('info-open')
+			infoslide.classList.remove('info-closed');
+
+		} else {
+			infoslide.style.width = "0vw";
+			infoslide.classList.remove('info-open')
+			infoslide.classList.add('info-closed');
+
+		}
+
+
+	}
 
 	</script>
 </body>
