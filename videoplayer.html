@@ -14,9 +14,6 @@
 
 	<style>
 
-	body{
-		background:#8a99a8!important;
-	}
 
 	.video-list{
 		padding-top:30px;
@@ -95,6 +92,7 @@
 		overflow:hidden;
 		padding:0px;
 		transition:0.5s;
+		margin-top:0px;
 	}
 
 	#window-inner4{
@@ -116,10 +114,10 @@
 
 	@media screen and (max-width: 600px) {
 
-			#vid1, #vid2, #vid3, #vid4, #vid5, #vid6, #vid7, #vid8{
-				max-height:none!important;
-				overflow:visible;
-			}
+		#vid1, #vid2, #vid3, #vid4, #vid5, #vid6, #vid7, #vid8{
+			max-height:none!important;
+			overflow:visible;
+		}
 
 		.vid-image{
 			padding-top:10px;
@@ -153,8 +151,11 @@
 
 		.video-list li{
 			border-radius:0px;
+			/* margin:0px; */
+
 
 		}
+
 
 
 		.yt-frame{
@@ -164,15 +165,13 @@
 			max-height:450px;
 		}
 
-
-
 	}
 
 
 	</style>
 
 </head>
-<body>
+<body class="iframe-body">
 
 	<div class="logo-header">
 		<img src="images/icons/openfolder.png"><h1>Video Design</h1>
@@ -183,13 +182,18 @@
 
 	<div class= "video-list">
 		<ul>
+
+
+			<li id = "vid1" class = "vid-drop">	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662103561?h=2a0d672fdf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mitchell Barclay - Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</li>
+
 			<li onclick="showVideo1();">
 
 				<div class="vid-description-container">
 
 					<div class="vid-description">
 						<h3>Animation Reel</h3> <br>
-						<p> A mashup of some of my best work in videos with animation as the focus. If you're interested in seeing any of the included clips in full, these are also available below.</p>
+						<p> A mashup of some of my best work in videos with animation as the focus.</p>
 					</div>
 
 					<div class="vid-image">
@@ -200,24 +204,27 @@
 
 			</li>
 
-			<li id = "vid1" class = "vid-drop">	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662103561?h=2a0d672fdf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mitchell Barclay - Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-			</script>
-		</li>
-
-		<li onclick="showVideo2();">
-
-			<div class="vid-description-container">
-				<div class="vid-description">
-					<h3>AI Writes NCEA English Essay</h3><br>
-					<p> This video was proposed as the first addition to a series aimed at educating young people on topical subjects outside of their standard school curriculum. It explains the concept of artificial intelligence within a context familiar to high school students.</p>
-				</div>
-				<div class="vid-image">
-					<img src="images/thumbs/ai_thumb.jpg">
-				</div>
-			</div>
-
 			<li id= "vid2" class = "vid-drop">
 				<iframe width="737" height="415" class="yt-frame" src="https://www.youtube.com/embed/kTUGrH4r2n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</li>
+
+			<li onclick="showVideo2();">
+
+				<div class="vid-description-container">
+					<div class="vid-description">
+						<h3>AI Writes NCEA English Essay</h3><br>
+						<p>Proposed as the first addition to a series aimed at educating young people on topical subjects outside of their standard school curriculum. This video explains the concept of artificial intelligence within a context familiar to high school students.</p>
+					</div>
+					<div class="vid-image">
+						<img src="images/thumbs/ai_thumb.jpg">
+					</div>
+				</div>
+
+			</li>
+
+
+			<li id= "vid4" class = "vid-drop">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662805353?h=93a1274df1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="POP Commercial"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 			</li>
 
 			<li onclick="showVideo4();">
@@ -225,32 +232,37 @@
 				<div class="vid-description-container">
 					<div class="vid-description">
 						<h3>POP Commercial</h3><br>
-						<!-- <p> Generic description is generic.</p> -->
+						<p>A short advertisement commissioned by a mobile application start-up.</p>
 					</div>
 					<div class="vid-image">
 						<img src="images/thumbs/pop_thumb.jpg">
 					</div>
 				</div>
 
-				<li id= "vid4" class = "vid-drop">
-					<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662805353?h=93a1274df1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="POP Commercial"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-				</li>
+			</li>
 
-				<li onclick="showVideo8();">
+			<li id= "vid8" class = "vid-drop">
+				<iframe width="855" height="481" class = "yt-frame" src="https://www.youtube.com/embed/sHO5NwXpquE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</li>
 
-					<div class="vid-description-container">
-						<div class="vid-description">
-							<h3>Answering Exam Questions</h3><br>
-							<!-- <p> Generic description is generic.</p> -->
-						</div>
-						<div class="vid-image">
-							<img src="images/thumbs/questions_thumb.jpg">
-						</div>
+			<li onclick="showVideo8();">
+
+				<div class="vid-description-container">
+					<div class="vid-description">
+						<h3>Answering Exam Questions</h3><br>
+						<p>My role at StudyTime has been to offer value to New Zealand students through digital media, which means researching formats that young people are familiar with. This is an example of the lighthearted vlog-type content I have filmed and edited during my time working for StudyTime. </p>
 					</div>
+					<div class="vid-image">
+						<img src="images/thumbs/questions_thumb.jpg">
+					</div>
+				</div>
 
-					<li id= "vid8" class = "vid-drop">
-						<iframe width="855" height="481" class = "yt-frame" src="https://www.youtube.com/embed/sHO5NwXpquE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</li>
+			</li>
+
+			<li id= "vid3" class = "vid-drop">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/615661140?h=997720fc0b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pink Smoke"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</li>
+
 
 			<li onclick="showVideo3();">
 
@@ -264,37 +276,36 @@
 					</div>
 				</div>
 
-				<li id= "vid3" class = "vid-drop">
-					<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/615661140?h=997720fc0b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pink Smoke"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-				</li>
+			</li>
+
+			<li id= "vid6" class = "vid-drop">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662805587?h=8964cd9397&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Arrow Uniforms 30 Years"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</li>
 
 
 
+			<li onclick="showVideo6();">
 
-						<li onclick="showVideo6();">
+				<div class="vid-description-container">
+					<div class="vid-description">
+						<h3>Arrow Uniforms Celebrating 30 Years</h3><br>
+						<p> A piece commissioned by Arrow Uniforms for their 30th anniversary marketing campainging..</p>
+					</div>
+					<div class="vid-image">
+						<img src="images/thumbs/arrow_thumb.jpg">
+					</div>
+				</div>
 
-							<div class="vid-description-container">
-								<div class="vid-description">
-									<h3>Arrow Uniforms Celebrating 30 Years</h3><br>
-									<!-- <p> Generic description is generic.</p> -->
-								</div>
-								<div class="vid-image">
-									<img src="images/thumbs/arrow_thumb.jpg">
-								</div>
-							</div>
-
-							<li id= "vid6" class = "vid-drop">
-								<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662805587?h=8964cd9397&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Arrow Uniforms 30 Years"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-							</li>
+			</li>
 
 
 
-			</ul>
-		</div>
-
+		</ul>
 	</div>
 
-	<script src="myscripts.js"></script>
+</div>
+
+<script src="myscripts.js"></script>
 
 
 </body>
