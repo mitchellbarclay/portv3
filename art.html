@@ -13,6 +13,110 @@
 
 	<style>
 
+	.mySlides img{
+		width:auto;
+		max-height:100%;
+		margin:auto!important;
+		max-width:100%;
+	}
+
+	.mySlides2 img{
+		width:100%;
+		max-height:100%;
+		margin:0px;
+		max-width:100%;
+		padding:0px;
+		display:block;
+
+	}
+
+	.mySlides2{
+		text-align:center;
+		margin:0px;
+		padding:0px;
+
+	}
+
+	.mySlides{
+		text-align:center;
+		height:80vh;
+		margin:0px;
+		padding:0px;
+		display:flex;
+		position:relative;
+		background:white;
+
+	}
+
+	* {box-sizing:border-box}
+
+	/* Slideshow container */
+	.slideshow-container {
+		width:100%;
+		position: relative;
+		margin: auto;
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+		display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 0%;
+		height:100%;
+		width:10vw;
+		color: white;
+		font-weight: bold;
+		font-size: 40px;
+		transition: 0.6s ease;
+		border-radius: 0px;
+		user-select: none;
+		background-color: rgba(0,0,0,0.1);
+		display:flex;
+	}
+
+	.prev p, .next p {
+		margin:auto;
+	}
+
+	.buttons{
+		height:100%;
+	}
+	/* Position the "next button" to the right */
+	.next {
+		right: 0%;
+
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.3);
+	}
+
+
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+	@keyframes fade {
+		from {opacity: .4}
+		to {opacity: 1}
+	}
+
+
 
 	.row{
 
@@ -31,58 +135,58 @@
 		background:white!important;
 	}
 
-.column{
-	display:inline-block;
-	width:50%;
-}
+	.column{
+		display:inline-block;
+		width:50%;
+	}
 
 
-.column img{
-	width:70%;
-}
+	.column img{
+		width:70%;
+	}
 
-.row img {
-	width:100%;
-	margin-top:0px;
-	margin-bottom:20px;
+	.row img {
+		width:100%;
+		margin-top:0px;
+		margin-bottom:0px;
 
-}
+	}
 
 
-.sub-header h2{
-color:#4eb593;
-padding:0px;
-margin:0px;
-}
+	.sub-header h2{
+		color:#4eb593;
+		padding:0px;
+		margin:0px;
+	}
 
-.sub-header{
-	padding-left:20px;
-	padding-right:20px;
-	background:white;
-	margin-left:20px;
-	margin-right:20px;
-	border-radius:20px;
-	padding-top:15px;
-	padding-bottom:15px;
-	margin-top:20px;
-	margin-bottom:20px;
-}
+	.sub-header{
+		padding-left:20px;
+		padding-right:20px;
+		background:white;
+		margin-left:20px;
+		margin-right:20px;
+		border-radius:20px;
+		padding-top:15px;
+		padding-bottom:15px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
 
-.sub-header p{
+	.sub-header p{
 		text-align:left;
-}
+	}
 
 
-.logo-header{
-	text-align:left;
-	background:#303a40;
-	width:100%;
-	display:flex;
-	position:fixed;
-	top:0px;
-	height:60px;
+	.logo-header{
+		text-align:left;
+		background:#303a40;
+		width:100%;
+		display:flex;
+		position:fixed;
+		top:0px;
+		height:60px;
 
-}
+	}
 
 	.logo-header img{
 		height:20px;
@@ -91,51 +195,73 @@ margin:0px;
 		margin-left:30px;
 	}
 
-.logo-header h1{
-	font-size:25px;
-	margin-left:20px;
-	margin-right:20px;
-	color:white;
-	margin-top:15px;
-	margin-bottom:5px;
-	padding-bottom:10px;
+	.logo-header h1{
+		font-size:25px;
+		margin-left:20px;
+		margin-right:20px;
+		color:white;
+		margin-top:15px;
+		margin-bottom:5px;
+		padding-bottom:10px;
 
-}
+	}
 
-.row2{
-	width:100%;
-	text-align:center;
-
-
-}
-
-.row2 img{
-	width:auto;
-	max-height:300px;
-	max-width:80%;
-  margin-left:2%;
-	margin-right:2%;
-	border-radius:30px;
-	margin-bottom:2%;
-	margin-top:2%;
+	.row2{
+		width:100%;
+		text-align:center;
 
 
-}
+	}
+
+	.row2 img{
+		width:25vw;
+		max-height:300px;
+		max-width:80%;
+		margin-left:2%;
+		margin-right:2%;
+		border-radius:30px;
+		margin-bottom:2%;
+		margin-top:2%;
+
+
+	}
+
+	.feature-art {
+		background:url("images/art/sketch_comp.jpg");
+    width:100vw;
+		height:80vh;
+		background-size:cover;
+		background-position:center;
+	}
+/*
+	.feature-art2{
+	background:url("images/art/wbk_final2.png");
+	background-size:cover;
+	background-position:right;
+	width:100vw;
+	height:90vh;
+	} */
 
 
 
-
-.page-description p::before{
+	/*
+	.page-description p::before{
 	content:"↳ ";
 	position:absolute;
 	margin-left:-40px;
 	font-size:1.5em;
 	margin-top:0.5em;
-}
+	} */
 
-.description-2{
-	margin-top:0px;
-}
+	.description-2{
+		margin-top:0px;
+	}
+
+	@media screen and (max-width: 767px) {
+
+
+
+	}
 
 	@media screen and (max-width: 1000px) {
 		.row{
@@ -145,8 +271,6 @@ margin:0px;
 		.column {
 			width:100%;
 		}
-
-
 
 	}
 
@@ -160,19 +284,19 @@ margin:0px;
 		}
 
 
-   .row2 img{
-		 width:70%;
-		 height:auto;
-		 max-height:none;
-	 }
+		.row2 img{
+			width:70%;
+			height:auto;
+			max-height:none;
+		}
 
 
-	 .row img {
+		.row img {
 
-	 	margin-top:0px;
-	 	margin-bottom:5px;
+			margin-top:0px;
+			margin-bottom:0px;
 
-	 }
+		}
 
 
 	}
@@ -190,47 +314,245 @@ margin:0px;
 	</div>
 
 	<div class="page-description">
-		<p><b>StudyTime:</b> While working for education company StudyTime I was fortunate enough to put my mark on resources used by thousands of NCEA students every year. This included cover illustrations and in-book illustrations for workbooks and visual guides, as well as social media materials and visual iconography for the StudyTime series of websites.</p>
-	</div>
-
-	<div class="row">
-    <img src="images/art/stmash.png">
+		<!-- <p><b>StudyTime:</b> While working for education company StudyTime I was fortunate enough to put my mark on resources used by thousands of NCEA students every year. This included cover illustrations and in-book illustrations for workbooks and visual guides, as well as social media materials and visual iconography for the StudyTime series of websites.</p> -->
+		<h3>Commercial Illustrations</h3>
 	</div>
 
 
+<!--
 	<div class="row">
 
-		<img src="images/art/wbkJ.png">
+		<img src="images/art/wbk_final2.png">
+	</div> -->
+
+
+
+
+	<div class="slideshow-container">
+		<div class="mySlides2 fade">
+			<img src="images/art/wbk_final2.png">
+			<!-- <div class="feature-art2">
+			</div> -->
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/wtg_illustration1.png">
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/wtg_illustration2.png">
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/success.png">
+
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/funeral.png">
+
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/academy_banner.png">
+		</div>
+
+		<div class="mySlides2 fade">
+			<img src="images/art/st_mash2.png">
+		</div>
+
+		<div class="buttons">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides2(-1)"><p>&#10094;</p></a>
+			<a class="next" onclick="plusSlides2(1)"><p>&#10095;</p></a>
+		</div>
 	</div>
-
-
-
-
 
 
 
 	<div class="page-description description-2">
-		<p><b>Personal works:</b> I don't really know what to tell you about this other than I like to draw for fun. Hope that helps.</p>
+		<!-- <p><b>Personal works:</b> A collection of my favourite illustrative works undertaken for friends and family, or personal projects.</p> -->
+		<h3>Personal Works</h3>
 	</div>
 
-<div class="row2">
-<img src="images/art/mans.jpeg">
-<img src="images/art/sushi.jpeg">
-<img src="images/art/bear.jpeg">
-<img src="images/art/robot.png">
-<img src="images/art/brart.jpeg">
-<img src="images/art/smile.png">
-<img src="images/art/blonde.jpeg">
-<img src="images/art/bot.jpeg">
-<img src="images/art/cry.jpeg">
-<img src="images/art/me2.png">
-<img src="images/art/speed.jpeg">
+	<!-- <div class="row2">
+	<img src="images/art/mans.jpeg">
+	<img src="images/art/sushi.jpeg">
+	<img src="images/art/bear.jpeg">
+	<img src="images/art/robot.png">
+	<img src="images/art/brart.jpeg">
+	<img src="images/art/smile.png">
+	<img src="images/art/blonde.jpeg">
+	<img src="images/art/bot.jpeg">
+	<img src="images/art/cry.jpeg">
+	<img src="images/art/me2.png">
+	<img src="images/art/speed.jpeg">
 
 
 
 
 
+</div> -->
+
+
+
+<!-- <img src="images/art/sketch_comp.jpg" style="width:100vw;"> -->
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+		<!-- <img src="images/art/sketch_comp.jpg"> -->
+		<div class="feature-art"></div>
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/bear.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/mans.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/sushi.jpeg">
+	</div>
+
+
+	<div class="mySlides fade">
+		<img src="images/art/robot.png">
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/funeral2.jpg">
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/me2.png">
+
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/ch1.png">
+
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/ch2.png">
+
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/ch3.png">
+
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/smile.png">
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/blonde.jpeg">
+
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/art/brart.jpeg">
+	</div>
+
+	<div class="mySlides fade">
+
+		<img src="images/art/bot.jpeg">
+
+	</div>
+
+
+	<div class="mySlides fade">
+		<img src="images/art/cry.jpeg">
+	</div>
+
+
+
+
+	<div class="mySlides fade">
+
+		<img src="images/art/speed.jpeg">
+
+	</div>
+
+
+	<div class="buttons">
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></a>
+		<a class="next" onclick="plusSlides(1)"><p>&#10095;</p></a>
+	</div>
 </div>
+
+
+<style>
+
+</style>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+showSlides2(slideIndex);
+
+
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function plusSlides2(n) {
+	showSlides2(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+	showSlides(slideIndex = n);
+}
+
+function currentSlide2(n) {
+	showSlides2(slideIndex = n);
+}
+
+
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+
+	slides[slideIndex-1].style.display = "block";
+}
+
+function showSlides2(n) {
+	var i;
+	var slides2 = document.getElementsByClassName("mySlides2");
+	if (n > slides2.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides2.length}
+	for (i = 0; i < slides2.length; i++) {
+		slides2[i].style.display = "none";
+	}
+
+	slides2[slideIndex-1].style.display = "block";
+}
+
+</script>
+
 
 
 </body>

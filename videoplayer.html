@@ -14,6 +14,10 @@
 
 	<style>
 
+	body{
+		background:#8a99a8!important;
+	}
+
 	.video-list{
 		padding-top:30px;
 		width:85%;
@@ -112,15 +116,23 @@
 
 	@media screen and (max-width: 600px) {
 
+			#vid1, #vid2, #vid3, #vid4, #vid5, #vid6, #vid7, #vid8{
+				max-height:none!important;
+				overflow:visible;
+			}
+
 		.vid-image{
-			padding-top:20px;
+			padding-top:10px;
 			width:100%;
 			margin:auto;
+
 		}
 
 		.vid-image img{
-			width:100%;
-			border-radius:20px;
+			width:50%;
+			display:none;
+			border-radius:0px;
+			margin:auto;
 		}
 
 		.vid-description{
@@ -131,6 +143,28 @@
 		.vid-description-container{
 			display:block;
 		}
+
+		.video-list{
+			padding-top:10px;
+			width:100%;
+			border-radius:0px;
+
+		}
+
+		.video-list li{
+			border-radius:0px;
+
+		}
+
+
+		.yt-frame{
+			width:100vw;
+			height:60vw;
+			max-width:800px;
+			max-height:450px;
+		}
+
+
 
 	}
 
@@ -191,7 +225,7 @@
 				<div class="vid-description-container">
 					<div class="vid-description">
 						<h3>POP Commercial</h3><br>
-						<p> Generic description is generic.</p>
+						<!-- <p> Generic description is generic.</p> -->
 					</div>
 					<div class="vid-image">
 						<img src="images/thumbs/pop_thumb.jpg">
@@ -207,7 +241,7 @@
 					<div class="vid-description-container">
 						<div class="vid-description">
 							<h3>Answering Exam Questions</h3><br>
-							<p> Generic description is generic.</p>
+							<!-- <p> Generic description is generic.</p> -->
 						</div>
 						<div class="vid-image">
 							<img src="images/thumbs/questions_thumb.jpg">
@@ -242,7 +276,7 @@
 							<div class="vid-description-container">
 								<div class="vid-description">
 									<h3>Arrow Uniforms Celebrating 30 Years</h3><br>
-									<p> Generic description is generic.</p>
+									<!-- <p> Generic description is generic.</p> -->
 								</div>
 								<div class="vid-image">
 									<img src="images/thumbs/arrow_thumb.jpg">
