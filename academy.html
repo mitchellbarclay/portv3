@@ -15,41 +15,66 @@
 
 
 
-</style>
+	</style>
 
 
 </head>
 
 <body class="iframe-body" style="margin:0px">
 
-<div class="menu-bar" style="position:fixed;">
-<div class="search-bar">
-<p>	ᐸ </p> <p>ᐳ</p> <p>⟳</p>
-<div class="url-bar">
-	<p>academy.studytime.co.nz</p>
-</div>
-<div id="website-info" onclick="webInfo()">
+	<div class="stitched-website">
+		<img src="images/web_ac/ac_menu.jpg" class="web-menu-top">
+		<img src="images/web_ac/ac_menu2.jpg" class="web-menu">
+		<img src="images/web_ac/ac_1.jpg" class ="page-preview">
+		<img src="images/web_ac/ac_2.jpg" class ="page-preview">
+		<img src="images/web_ac/ac_3.jpg" class ="page-preview">
+		<img src="images/web_ac/ac_4.jpg" class ="page-preview">
+		<img src="images/web_ac/ac_5.jpg" class ="page-preview">
 
-</div>
-</div>
-<img src="images/web/academymenu.png" style="height:auto;width:100vw;">
-</div>
-<img src="images/web/academy.png" class ="page-preview" style="height:auto;width:100vw;">
+
+
+
+
+	</div>
+
+	<div class="menu-bar" style="position:fixed; width:100vw;">
+		<div class="search-bar">
+			<p>	ᐸ </p> <p>ᐳ</p>
+			<div class="url-bar">
+				<p>academy.studytime.co.nz</p>
+			</div>
+
+		</div>
+		<div id="website-info" class="info-closed" onclick="webInfo()">
+
+			<div class = "web-info-inner">
+				<p>penis</p>
+			</div>
+
+		</div>
+	</div>
 
 	<script>
 
-		var infoslide = document.getElementById("website-info");
+	var infoslide = document.getElementById("website-info");
 
-		function webInfo(){
+	function webInfo(){
 
 
-  if (infoslide.style.right !== "0px") {
-    infoslide.style.right = "0px";
-  } else {
-    infoslide.style.right = "-50vw";
-  }
+		if (infoslide.style.width !== "60vw") {
+			infoslide.style.width = "60vw";
+			infoslide.classList.add('info-open')
+			infoslide.classList.remove('info-closed');
 
-}
+		} else {
+			infoslide.style.width = "0vw";
+			infoslide.classList.remove('info-open')
+			infoslide.classList.add('info-closed');
+
+		}
+
+
+	}
 
 	</script>
 
