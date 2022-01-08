@@ -663,7 +663,7 @@ p {
 .item-window{
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin-top:0px;
   padding-bottom:0px!important;
   border-radius:0px;
@@ -683,7 +683,7 @@ display:none;
 
   top:0px;
   margin-top:0px;
-  height:100vh;
+  height:100%;
 }
 
 .close{
